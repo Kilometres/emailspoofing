@@ -5,7 +5,7 @@ header ("Content-type: image/png");
 $rno = rand(1000,99999);
 $_SESSION['ckey'] = md5($rno);
 
-$img_handle = imageCreateFromPNG("bg1.PNG");
+$img_handle = imageCreateFromPNG("https://i.imgur.com/A87tOE5.png");
 $color = ImageColorAllocate ($img_handle, 0, 0, 0);
 ImageString ($img_handle, 5, 20, 13, $rno, $color);
 ImagePng ($img_handle);
